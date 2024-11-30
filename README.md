@@ -4,6 +4,9 @@
 
 This is an interactive Kanban board application built with **ReactJS**. The application fetches data from a provided API and allows users to group and sort tasks based on various criteria such as **Status**, **User**, and **Priority**. It also allows sorting tasks by **Priority** and **Title**. The UI design closely follows the provided screenshots and adheres to the functionality and visual structure outlined in the assignment.
 
+### Live Demo
+[You can view here](https://quicksell-assignment-kgaurav-projects.vercel.app/)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
