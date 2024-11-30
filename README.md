@@ -43,7 +43,7 @@ To run the project locally, follow these steps:
 
 2. Navigate to the project directory:
     ```bash
-    cd frontend-kanban-board
+    cd quicksell_assignment
     ```
 
 3. Install the dependencies:
