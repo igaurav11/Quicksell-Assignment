@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Kanban Board Application - Quicksell Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This is an interactive Kanban board application built with **ReactJS**. The application fetches data from a provided API and allows users to group and sort tasks based on various criteria such as **Status**, **User**, and **Priority**. It also allows sorting tasks by **Priority** and **Title**. The UI design closely follows the provided screenshots and adheres to the functionality and visual structure outlined in the assignment.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Introduction](#introduction)
+- [Features](#features)
+- [API](#api)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Grouping Options](#grouping-options)
+- [Sorting Options](#sorting-options)
+- [State Persistence](#state-persistence)
+- [Dependencies](#dependencies)
+- [Contributors](#contributors)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Dynamic Grouping**: Users can group tasks by **Status**, **User**, or **Priority**.
+- **Sorting**: Tasks can be sorted by **Priority** (descending) or **Title** (ascending).
+- **Responsive Design**: The application is fully responsive, providing a seamless experience across devices.
+- **Pure CSS**: Styled using pure CSS without any third-party libraries (such as Bootstrap, Tailwind, etc.), ensuring lightweight and fast performance.
+- **State Persistence**: User's view settings (grouping and sorting) are saved across page reloads.
 
-### `npm test`
+## API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application interacts with the following API for fetching task data:
 
-### `npm run build`
+- API Endpoint: `https://api.quicksell.co/v1/internal/frontend-assignment`
+- The API provides task information including their **Status**, **Priority**, and **Assigned User**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/igaurav11/Quicksell-Assignment.git
+    ```
 
-### `npm run eject`
+2. Navigate to the project directory:
+    ```bash
+    cd frontend-kanban-board
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. The application will be running at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+Once the application is running:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Click on the "Display" button to choose a grouping method (**Status**, **User**, or **Priority**).
+2. Use the sorting options to arrange tasks by **Priority** or **Title**.
+3. The Kanban board will automatically update to reflect your selections.
+4. View preferences (grouping and sorting) will persist even after refreshing the page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Grouping Options
 
-### Code Splitting
+- **By Status**: Groups tickets based on their current status.
+- **By User**: Groups tickets according to the user they are assigned to.
+- **By Priority**: Groups tickets based on their priority level (Urgent, High, Medium, Low, No Priority).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Sorting Options
 
-### Analyzing the Bundle Size
+- **By Priority**: Sorts the tickets in descending order of priority, from **Urgent** to **No Priority**.
+- **By Title**: Sorts tickets alphabetically in ascending order based on their title.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## State Persistence
 
-### Making a Progressive Web App
+The application saves the user's current view (grouping and sorting) in **localStorage**, ensuring that the same view is displayed after a page reload.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Dependencies
 
-### Advanced Configuration
+This project is built with the following dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **ReactJS**: Frontend framework used for building user interfaces.
+- **Fetch**: Used for making API requests to fetch task data.
+- **localStorage**: For saving and persisting user preferences across sessions.
 
-### Deployment
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Name** - Kumar Gaurav
